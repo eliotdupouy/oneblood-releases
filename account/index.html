@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex"><meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; script-src &#x27;self&#x27;; style-src &#x27;self&#x27;; font-src &#x27;self&#x27;; img-src &#x27;self&#x27; data:; connect-src &#x27;self&#x27; https://bpijnoajcgwiicnfmrvw.supabase.co; form-action &#x27;none&#x27;; object-src &#x27;none&#x27;; frame-src &#x27;none&#x27;"><title>Your Oneblood account | Oneblood</title><meta name="description" content="Sign in or create your free Oneblood account for Mutation."><meta property="og:title" content="Your Oneblood account | Oneblood"><meta property="og:description" content="Sign in or create your free Oneblood account for Mutation."><meta property="og:type" content="website"><link rel="canonical" href="https://eliotdupouy.github.io/oneblood-releases/account/"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f1f4f5'/%3E%3Ccircle cx='29' cy='31' r='15' fill='none' stroke='%2330434b' stroke-width='8'/%3E%3Ccircle cx='49' cy='48' r='5' fill='%233cb8b3'/%3E%3C/svg%3E"><link rel="stylesheet" href="/oneblood-releases/account.css"><script type="module" src="/oneblood-releases/account.js"></script></head><body id="top" class="account-page"><header class="account-header"><a class="account-brand" href="/oneblood-releases/" aria-label="Oneblood home">oneblood<span>.</span></a><nav aria-label="Main navigation"><a href="/oneblood-releases/games/mutation/">Mutation</a><a href="/oneblood-releases/download/">Download</a></nav></header>
+<main id="main" class="account-layout">
+  <div class="account-art" aria-hidden="true"><div><span>MUTATION</span></div></div>
+  <section class="account-panel" aria-labelledby="account-title">
+    <div class="account-content">
+      <p class="account-eyebrow">ONEBLOOD ACCOUNT</p>
+      <h1 id="account-title">Sign in</h1>
+      <p class="account-subtitle" id="account-subtitle">Your account for Mutation.</p>
+      <p id="handoff-error" class="account-message error" role="alert" hidden></p>
+      <div id="auth-view">
+        <div class="account-tabs" role="tablist" aria-label="Account action"><button id="signin-tab" type="button" role="tab" aria-selected="true" aria-controls="auth-form">Sign in</button><button id="signup-tab" type="button" role="tab" aria-selected="false" aria-controls="auth-form">Create account</button></div>
+        <form id="auth-form">
+          <label id="signup-name-field" class="account-field" hidden>Username<input id="signup-name" name="username" autocomplete="nickname" minlength="2" maxlength="32" placeholder="Your name in Oneblood"><small>2–32 letters, numbers, spaces, underscores, dots or hyphens.</small></label>
+          <label class="account-field">Email address<input id="email" type="email" name="email" autocomplete="email" maxlength="254" required placeholder="you@example.com"></label>
+          <label class="account-field">Password<span class="account-password"><input id="password" type="password" name="password" autocomplete="current-password" maxlength="1024" required placeholder="Your password"><button id="show-password" type="button" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></span></label>
+          <label class="account-remember"><input id="keep-signed-in" type="checkbox" checked>Keep me signed in</label>
+          <button id="auth-submit" type="submit" class="account-primary">Sign in <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+      <div id="profile-view" hidden>
+        <div class="account-identity"><span class="account-avatar" id="profile-avatar" aria-hidden="true"></span><div><small>YOUR ONEBLOOD ID</small><strong id="profile-handle"></strong></div></div>
+        <p id="profile-loading" class="account-subtitle" hidden>Loading your Oneblood ID…</p>
+        <button id="profile-retry" class="account-secondary" type="button" hidden>Retry</button>
+        <div id="game-confirmation" hidden><p class="account-subtitle">Continue to Mutation with this account.</p><button id="continue-game" type="button" class="account-primary">Continue to Mutation <span aria-hidden="true">→</span></button></div>
+        <div id="game-complete" hidden><p class="account-subtitle">Return to Mutation to finish signing in.</p><button id="retry-game" type="button" class="account-secondary">Try opening Mutation again</button></div>
+        <form id="username-form"><label class="account-field">Username<span class="account-username"><input id="profile-name" name="username" autocomplete="nickname" maxlength="128" required><span id="profile-tag" aria-label="Account tag"></span></span></label><small class="account-hint">Use 2–32 letters, numbers, spaces, underscores, dots or hyphens. Your four-digit tag stays the same.</small><button id="save-username" type="submit" class="account-secondary">Save username</button></form>
+        <button id="signout" type="button" class="account-text-button">Sign out</button>
+      </div>
+      <p id="account-message" class="account-message" role="status" aria-live="polite" hidden></p>
+      <noscript><p class="account-message error">Enable JavaScript to sign in to your Oneblood account.</p></noscript>
+      <p class="account-footnote">© 2026 Oneblood</p>
+    </div>
+  </section>
+</main>
+</body></html>
